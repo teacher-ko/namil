@@ -20,7 +20,7 @@ st.title("남일 사랑 Test~!! ")
 
 if not st.session_state["authorized"]:
     code = st.text_input(
-        "시작하려면 코드를 입력하세요. (코드는 별관2층 컴퓨터실습실에서 확인 가능합니다.)",
+        "시작하려면 코드를 입력하세요.",
         type="password"
     )
     if st.button("확인"):
@@ -134,7 +134,7 @@ if st.button("정답 제출") and not st.session_state["submitted"]:
 
 if st.session_state["submitted"]:
     if st.session_state["all_correct"]:
-        st.success("축하합니다, 별관2층 컴퓨터실습실에서 상품을 받아가세요!")
+        st.success("100점! 학교 사랑이 대단합니다.")
     else:
         st.warning("아쉽네요, 우리 학교에 대해 더 알아봅시다!")
 
